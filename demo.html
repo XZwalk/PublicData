@@ -9,14 +9,15 @@
 </body>
 
 
-<!--js的引入顺序必须按照如下顺序引入，否则会导致报错-->
-<script>
-    function carRepaymentPlanDat(data) {
-        alert(data);
-    }
-</script>
-
 <script type="text/javascript" src="https://xzwalk.github.io/PublicData/zx-eddata.js"></script>
 <script type="text/javascript" src="https://xzwalk.github.io/PublicData/carRepaymentPlanDat.js"></script>
+
+
+<!--js的引入顺序必须按照如下顺序引入，否则会导致报错-->
+<script>
+    decryptedData(encrypt_data_carRepaymentPlanDat, (data) => {
+        alert(data);
+    })
+</script>
 
 </html>
